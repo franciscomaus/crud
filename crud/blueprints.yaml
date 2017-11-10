@@ -1,0 +1,31 @@
+name: Crud
+version: 0.1.0
+description: basic catalog
+icon: plug
+author:
+  name: Francisco maus
+  email: francisco.zamudio@maus.mx
+homepage: https://github.com/francisco-maus/grav-plugin-crud
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/francisco-maus/grav-plugin-crud/issues
+docs: https://github.com/francisco-maus/grav-plugin-crud/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: Text Variable
+      help: Text to add to the top of a page
